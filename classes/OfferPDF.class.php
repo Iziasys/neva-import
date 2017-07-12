@@ -542,8 +542,8 @@ class OfferPDF extends PDF
         $this->Cell(185, 12, utf8_decode('***Sous réserve de modification des tarifs du cheval fiscal et du malus écologique en vigueur et de confirmation du taux de Co2.'));
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('****Sous réserve de disponibilité du véhicule.'));
-        /*$this->Ln($this->smallLn);
-        $this->Cell(185, 12, utf8_decode('***Sous réserve de la disponibilité du véhicule.'));*/
+        $this->Ln($this->smallLn);
+        $this->Cell(185, 12, utf8_decode('***Sous réserve de la disponibilité du véhicule.'));
     }
 
     public function printBlocRecapPackageContent(){
