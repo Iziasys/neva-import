@@ -1,0 +1,1 @@
+<?php echo 'Accès Interdit !';

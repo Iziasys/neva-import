@@ -1,0 +1,243 @@
+body{
+    /*margin-top:54px;*/
+    background:#f1f1f1;
+    height:100%;
+    display:block;
+}
+
+.my-navbar{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #272a2c;
+    height:100%;
+    width:188px;
+    display:block;
+    position:fixed;
+    font-size:1.2rem;
+}
+    .my-navbar > #block-logo-receiver{
+        height:188px;
+        display:block;
+        position:relative;
+    }
+        #logo-receiver{
+            height:calc(100% - 20px);width:calc(100% - 20px);
+            -webkit-border-radius:100%;
+            -moz-border-radius:100%;
+            border-radius:100%;
+            background:#ffffff;
+            margin-left:10px;
+            margin-top:10px;
+        }
+            #logo-receiver > img{
+                margin-top:30px;margin-left:30px;
+                max-width:120px;
+            }
+    .my-navbar > .nav{
+        padding-left:10px;
+    }
+    .my-navbar > .nav-to-bottom{
+        position: fixed;
+        bottom: 20px;
+    }
+        .my-navbar > .nav > .nav-item > a{
+            width:100%;
+            display:block;
+        }
+
+#alertsReceiver{
+    margin-left:188px;
+    font-size:1.2rem;
+}
+
+#content{
+    margin-left:188px;
+    overflow: auto;
+    padding-top:25px;
+}
+
+.card-principalColor{
+    color: #ffffff;
+}
+
+.text-large{
+    font-size: 1.1rem;
+}
+.text-medium{
+    font-size: 1rem;
+}
+
+.text-small{
+    font-size: 0.9rem;
+}
+
+.text-very-small{
+    font-size: 0.75rem;
+}
+
+.small-line-height{
+    line-height:1;
+}
+
+.striped:nth-child(even){
+    background:#e5e5e5;
+}
+
+.col-without-padding, .card-without-padding{
+    padding: 0;
+}
+.card-without-margin{
+    margin:0;
+}
+
+.fit-to-container{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-pills-lg > .nav-item > a{
+    padding:24px;
+}
+
+.form-control-xs, .input-group-xs>.form-control{
+    padding: .175rem .4rem;
+    font-size: .7rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+.input-group-xs>.input-group-addon{
+    padding: .175rem .4rem;
+    font-size: .5rem;
+    line-height: 1.5;
+}
+.input-group-addon.min-padding{
+    padding: .175rem .4rem;
+}
+
+.customized-jquery-ui-input{
+    border:0;
+    color:#0275d8;
+    font-weight:bold;
+    background: transparent;
+}
+#inputSelectPriceRange > .ui-slider-range{
+    background:#0275d8;
+}
+.multiselect-button button{
+    background:#0275d8;
+    color:#ffffff;
+}
+.loadWhenReady{
+    display:none;
+}
+
+tr.clickable{
+    cursor:pointer;
+}
+
+#block-vehicle-information{
+    border:1px solid #0275d8;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+
+.card-border-blue{
+    border:1px solid #0275d8;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+}
+.card-border-white{
+    border:1px solid #ffffff;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+}
+.card-border-round{
+    border-radius:4px;
+}
+
+.text-white{
+    color:#ffffff;
+}
+
+#block-vehicle-information > .card{
+    background: #ffffff;
+    border-color: #666666;
+}
+
+.card-without-border{
+    border: none;
+}
+.card-with-right-border{
+    border-right: 1px solid #666666;
+}
+
+.col-with-left-border{
+    border-left:1px solid #666666;
+}
+
+.text-primaryColor{
+    color:#0275d8;
+}
+.text-default{
+    color:#000000;
+}
+
+.hoverable:hover{
+    background: #dddddd;
+}
+
+.hoverable-primary:hover{
+    background: #0275d8;
+}
+.hoverable-info:hover{
+    background: #5bc0de;
+}
+.hoverable-inverse:hover{
+    color: #ffffff;
+}
+
+.not-displayed{
+    display: none;
+}
+
+.equipment-item{
+    display:inline-block;
+    margin: 2px 5px;
+    padding:3px 5px;
+    background-color:#ffffff;
+    border-radius:4px;
+    border:1px solid #0275d8;
+}
+    .equipment-item > .equipment-item-itemName{
+        display: inline-block;
+    }
+    .equipment-item > .equipment-item-delete{
+        display: inline-block;
+        padding:0 5px;
+    }
+    .equipment-item > .equipment-item-delete:hover{
+        cursor:pointer;
+    }
+
+#bloc-price-stock-vehicle{
+    position:relative;
+    top:40%;
+    background: #0275d8;
+    color: #ffffff;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.link-black{
+    color: #000000;
+}
+.link-black:hover{
+    color: #000000;
+}
+
+#carousel-vehicle-images img{
+    height:400px;
+}
