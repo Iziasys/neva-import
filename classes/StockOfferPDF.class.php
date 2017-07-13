@@ -338,6 +338,13 @@ class StockOfferPDF extends PDF
         $this->Cell(185, 12, utf8_decode('Le règlement du véhicule est a effectuer, soit par chèque de banque à la livraison (nous vous prions de nous envoyer une copie 24 à 48h avant la date'));
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('de livraison), soit par virement (la somme devra figurer sur notre compte au moment de la livraison du véhicule).'));
+        $this->Ln($this->smallLn);
+        $this->Ln($this->smallLn);
+        $this->Cell(185, 12, utf8_decode('Une caution de 10% du prix du véhicule TTC sera demandée à la signature du bon de commande du véhicule.'));
+        $this->Ln($this->smallLn);
+        $this->Cell(185, 12, utf8_decode('Cette caution ne sera pas encaissée sauf en cas de renonciation à la commande.'));
+        $this->Ln($this->smallLn);
+        $this->Cell(185, 12, utf8_decode('Cette caution sera restituée lors du paiement complet du véhicule.'));
     }
 
     public function printBlocRecapPackageContent(){
