@@ -173,9 +173,10 @@ class StockOfferPDF extends PDF
         $this->Cell(80, 12, utf8_decode($client->getPostalCode().' '.$client->getTown()));
         $this->Ln($this->regularLn);
         $this->Cell(120, 12,utf8_decode('Mail : '.$sellerMail));
-        $this->Cell(80, 12, utf8_decode('Mail. : '.$client->getEmail()));
+        if($client->getEmail() != '') $this->Cell(80, 12, utf8_decode('Mail : '.$client->getEmail()));
         $this->Ln($this->regularLn);
-        $this->Cell(120, 12,utf8_decode('Tél. : '.getPhoneNumber($clientPhone)));
+        $this->Cell(120, 12,'');
+        if(getPhoneNumber($clientPhone) != '') $this->Cell(120, 12,utf8_decode('Tél. : '.getPhoneNumber($clientPhone)));
     }
 
     public function printBlocVehicleWithImage(){
