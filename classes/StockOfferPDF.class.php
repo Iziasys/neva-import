@@ -326,7 +326,7 @@ class StockOfferPDF extends PDF
         $this->Cell($priceWidth, 8, utf8_decode(number_format($priceDetails->getPostTaxesKeyInHandPrice(), 2, '.', ' ').' '.$this->chrEuro.' TTC***'), 'TRB', 0, 'R');
         $this->Ln($this->largeLn);*/
 
-        $this->SetFont('Arial', 'I', 9);
+        $this->SetFont('Arial', 'I', 8);
         $this->Cell(185, 12, utf8_decode('*Taux donné à titre indicatif.'));
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('**Délai donné à titre indicatif.'));
@@ -335,7 +335,7 @@ class StockOfferPDF extends PDF
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('****Sous réserve de disponibilité du véhicule.'));
         $this->Ln($this->smallLn);
-        $this->Cell(185, 12, utf8_decode('***Sous réserve de la disponibilité du véhicule.'));
+        $this->Cell(185, 12, utf8_decode('Le règlement du véhicule est a effectuer, soit par chèque de banque à la livraison (nous vous prions de nous envoyer une copie 24 à 48h avant la date de livraison), soit par virement (la somme devra figurer sur notre compte au moment de la livraison du véhicule).'));
     }
 
     public function printBlocRecapPackageContent(){
