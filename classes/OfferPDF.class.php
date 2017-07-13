@@ -206,7 +206,9 @@ class OfferPDF extends PDF
         $this->Cell(80, 12, utf8_decode($client->getPostalCode().' '.$client->getTown()));
         $this->Ln($this->regularLn);
         $this->Cell(120, 12,utf8_decode('Mail : '.$sellerMail));
-        $this->Cell(80, 12, utf8_decode('Tél. : '.getPhoneNumber($clientPhone)));
+        $this->Cell(80, 12, utf8_decode('Mail. : '.$client->getEmail()));
+        $this->Ln($this->regularLn);
+        $this->Cell(120, 12,utf8_decode('Tél. : '.getPhoneNumber($clientPhone)));
     }
 
     public function printBlocVehicleWithImage(){
@@ -543,6 +545,7 @@ class OfferPDF extends PDF
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('****Sous réserve de disponibilité du véhicule.'));
         $this->Ln($this->smallLn);
+        $this->SetFont('Arial', '', 8);
         $this->Cell(185, 12, utf8_decode('Le règlement du véhicule est a effectuer, soit par chèque de banque à la livraison (nous vous prions de nous envoyer une copie 24 à 48h avant la date'));
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('de livraison), soit par virement (la somme devra figurer sur notre compte au moment de la livraison du véhicule).'));
@@ -553,6 +556,9 @@ class OfferPDF extends PDF
         $this->Cell(185, 12, utf8_decode('Cette caution ne sera pas encaissée sauf en cas de renonciation à la commande.'));
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('Cette caution sera restituée lors du paiement complet du véhicule.'));
+        $this->Ln($this->smallLn);
+        $this->Ln($this->smallLn);
+        $this->Cell(185, 12, utf8_decode('CHEQUE DE CAUTION N°................................  BANQUE:..........................  MONTANT:................'));
     }
 
     public function printBlocRecapPackageContent(){
