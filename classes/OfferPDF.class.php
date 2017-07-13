@@ -543,7 +543,9 @@ class OfferPDF extends PDF
         $this->Ln($this->smallLn);
         $this->Cell(185, 12, utf8_decode('****Sous réserve de disponibilité du véhicule.'));
         $this->Ln($this->smallLn);
-        $this->Cell(185, 12, utf8_decode('Le règlement du véhicule est a effectuer, soit par chèque de banque à la livraison (nous vous prions de nous envoyer une copie 24 à 48h avant la date de livraison), soit par virement (la somme devra figurer sur notre compte au moment de la livraison du véhicule).'));
+        $this->Cell(185, 12, utf8_decode('Le règlement du véhicule est a effectuer, soit par chèque de banque à la livraison (nous vous prions de nous envoyer une copie 24 à 48h avant la date'));
+        $this->Ln($this->smallLn);
+        $this->Cell(185, 12, utf8_decode('de livraison), soit par virement (la somme devra figurer sur notre compte au moment de la livraison du véhicule).'));
     }
 
     public function printBlocRecapPackageContent(){
