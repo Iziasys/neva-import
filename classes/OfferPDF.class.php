@@ -559,7 +559,7 @@ class OfferPDF extends PDF
         $this->Cell(185, 12, utf8_decode('Cette caution sera restituée lors du paiement complet du véhicule.'));
         $this->Ln($this->smallLn);
         $this->Ln($this->smallLn);
-        $this->Cell(185, 12, utf8_decode('CHEQUE DE CAUTION N°................................  BANQUE:..........................  MONTANT:................'));
+        $this->Cell(185, 12, utf8_decode('CHEQUE DE CAUTION N°........................................................................ BANQUE:.................................................... ............ MONTANT:..................................................'));
     }
 
     public function printBlocRecapPackageContent(){
