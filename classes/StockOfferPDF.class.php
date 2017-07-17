@@ -361,7 +361,7 @@ class StockOfferPDF extends PDF
         $this->SetFont('Arial', '', 11);
 
         $this->MultiCell(185, 5, utf8_decode('Il comprend : '.$this->getStructure()->getPackageContent()));
-        $this->Cell(185, 12, utf8_decode('La carte grise définitive reste à la charge du client.'));
+        //$this->Cell(185, 12, utf8_decode('La carte grise définitive reste à la charge du client.'));
     }
 
     public function printBlocSuppInfo(){
